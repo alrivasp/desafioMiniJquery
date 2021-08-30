@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div id="caja1" style="background-color:red;border: 1px solid gray;margin:10px;padding: 10px">
+                <span>haz click!!!</span>
+            </div>
+            <div id="caja2" style="background-color:white;border: 1px solid gray;margin:10px;padding: 10px">
+                <span>Cambiame</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('#caja1').on('click', function(){
+            $('#caja2').css('height','200px');
+            $('#caja2').css('background-color','yellow');
+        });
+    </script>
+</body>
+
+</html>
